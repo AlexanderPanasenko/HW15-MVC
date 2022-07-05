@@ -35,7 +35,7 @@ class SettingCellModel {
     
     func configure() -> [Sections] {
         return [Sections(options: [
-            .switchCell(model: SettingsSwitchOptions(title: "Авиарежим", icon: UIImage(systemName: "airplane"), iconBackgroundColor: .yellow, handler: {
+            .switchCell(model: SettingsSwitchOptions(title: "Авиарежим", icon: UIImage(systemName: "airplane"), iconBackgroundColor: .orange, handler: {
                 print("Нажата ячейка Авиарежим")
             }, isOn: true)),
             .staticCell(model: SettingsOptions(title: "Wi-Fi", icon: UIImage(systemName: "wifi"), iconBackgroundColor: .systemBlue) {
@@ -46,7 +46,7 @@ class SettingCellModel {
             }),
             .switchCell(model: SettingsSwitchOptions(title: "Мобильные данные", icon: UIImage(systemName: "antenna.radiowaves.left.and.right"), iconBackgroundColor: .systemGreen, handler: {
                 print("Нажата ячейка Мобильные данные")
-            }, isOn: false)),
+            }, isOn: true)),
             .staticCell(model: SettingsOptions(title: "Режим модема", icon: UIImage(systemName: "personalhotspot"), iconBackgroundColor: .systemGreen) {
                 print("Нажата ячейка Режим модема")
             })
