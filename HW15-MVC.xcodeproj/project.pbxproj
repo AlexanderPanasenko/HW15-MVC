@@ -14,10 +14,10 @@
 		5258EDED28748A4E00F959C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5258EDEC28748A4E00F959C4 /* Assets.xcassets */; };
 		5258EDF028748A4E00F959C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5258EDEE28748A4E00F959C4 /* LaunchScreen.storyboard */; };
 		5258EE012874925800F959C4 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258EE002874925800F959C4 /* Constraints.swift */; };
-		5258EE032874928E00F959C4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258EE022874928E00F959C4 /* Model.swift */; };
-		5258EE05287492AF00F959C4 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258EE04287492AF00F959C4 /* View.swift */; };
-		5258EE07287492DD00F959C4 /* SwitchTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258EE06287492DD00F959C4 /* SwitchTableView.swift */; };
-		5258EE09287492FF00F959C4 /* SettingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258EE08287492FF00F959C4 /* SettingTableView.swift */; };
+		5258EE032874928E00F959C4 /* SettingCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258EE022874928E00F959C4 /* SettingCellModel.swift */; };
+		5258EE05287492AF00F959C4 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258EE04287492AF00F959C4 /* SettingView.swift */; };
+		5258EE07287492DD00F959C4 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258EE06287492DD00F959C4 /* SwitchTableViewCell.swift */; };
+		5258EE09287492FF00F959C4 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258EE08287492FF00F959C4 /* SettingTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +30,10 @@
 		5258EDEF28748A4E00F959C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5258EDF128748A4E00F959C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5258EE002874925800F959C4 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
-		5258EE022874928E00F959C4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		5258EE04287492AF00F959C4 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		5258EE06287492DD00F959C4 /* SwitchTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableView.swift; sourceTree = "<group>"; };
-		5258EE08287492FF00F959C4 /* SettingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableView.swift; sourceTree = "<group>"; };
+		5258EE022874928E00F959C4 /* SettingCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCellModel.swift; sourceTree = "<group>"; };
+		5258EE04287492AF00F959C4 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		5258EE06287492DD00F959C4 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		5258EE08287492FF00F959C4 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +68,7 @@
 			children = (
 				5258EDF8287490C100F959C4 /* Sources */,
 				5258EDFF2874920800F959C4 /* Resources */,
+				5258EDF128748A4E00F959C4 /* Info.plist */,
 			);
 			path = "HW15-MVC";
 			sourceTree = "<group>";
@@ -103,7 +104,7 @@
 		5258EDFA287490E300F959C4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5258EE022874928E00F959C4 /* Model.swift */,
+				5258EE022874928E00F959C4 /* SettingCellModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,7 +112,7 @@
 		5258EDFB287490EE00F959C4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5258EE04287492AF00F959C4 /* View.swift */,
+				5258EE04287492AF00F959C4 /* SettingView.swift */,
 				5258EDFC287490F800F959C4 /* Cells */,
 			);
 			path = View;
@@ -120,8 +121,8 @@
 		5258EDFC287490F800F959C4 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				5258EE06287492DD00F959C4 /* SwitchTableView.swift */,
-				5258EE08287492FF00F959C4 /* SettingTableView.swift */,
+				5258EE06287492DD00F959C4 /* SwitchTableViewCell.swift */,
+				5258EE08287492FF00F959C4 /* SettingTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -147,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				5258EDE928748A4C00F959C4 /* Main.storyboard */,
-				5258EDF128748A4E00F959C4 /* Info.plist */,
 				5258EDEE28748A4E00F959C4 /* LaunchScreen.storyboard */,
 				5258EDEC28748A4E00F959C4 /* Assets.xcassets */,
 			);
@@ -225,11 +225,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5258EE032874928E00F959C4 /* Model.swift in Sources */,
+				5258EE032874928E00F959C4 /* SettingCellModel.swift in Sources */,
 				5258EE012874925800F959C4 /* Constraints.swift in Sources */,
-				5258EE09287492FF00F959C4 /* SettingTableView.swift in Sources */,
-				5258EE07287492DD00F959C4 /* SwitchTableView.swift in Sources */,
-				5258EE05287492AF00F959C4 /* View.swift in Sources */,
+				5258EE09287492FF00F959C4 /* SettingTableViewCell.swift in Sources */,
+				5258EE07287492DD00F959C4 /* SwitchTableViewCell.swift in Sources */,
+				5258EE05287492AF00F959C4 /* SettingView.swift in Sources */,
 				5258EDE828748A4C00F959C4 /* ViewController.swift in Sources */,
 				5258EDE428748A4C00F959C4 /* AppDelegate.swift in Sources */,
 				5258EDE628748A4C00F959C4 /* SceneDelegate.swift in Sources */,
