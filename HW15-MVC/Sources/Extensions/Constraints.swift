@@ -5,4 +5,15 @@
 //  Created by Alexander Panasenko on 05.07.2022.
 //
 
-import Foundation
+import UIKit
+
+extension UIView {
+    
+    func addSubviewsForAutoLayout(_ views: [UIView]) {
+        for view in views {
+            view.translatesAutoresizingMaskIntoConstraints = false
+            addSubview(view)
+        }
+    }
+}
+
