@@ -13,6 +13,11 @@
 		5258EDEB28748A4C00F959C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5258EDE928748A4C00F959C4 /* Main.storyboard */; };
 		5258EDED28748A4E00F959C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5258EDEC28748A4E00F959C4 /* Assets.xcassets */; };
 		5258EDF028748A4E00F959C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5258EDEE28748A4E00F959C4 /* LaunchScreen.storyboard */; };
+		5258EE012874925800F959C4 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258EE002874925800F959C4 /* Constraints.swift */; };
+		5258EE032874928E00F959C4 /* SettingCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258EE022874928E00F959C4 /* SettingCellModel.swift */; };
+		5258EE05287492AF00F959C4 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258EE04287492AF00F959C4 /* SettingView.swift */; };
+		5258EE07287492DD00F959C4 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258EE06287492DD00F959C4 /* SwitchTableViewCell.swift */; };
+		5258EE09287492FF00F959C4 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258EE08287492FF00F959C4 /* SettingTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		5258EDEC28748A4E00F959C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5258EDEF28748A4E00F959C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5258EDF128748A4E00F959C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5258EE002874925800F959C4 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		5258EE022874928E00F959C4 /* SettingCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCellModel.swift; sourceTree = "<group>"; };
+		5258EE04287492AF00F959C4 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		5258EE06287492DD00F959C4 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		5258EE08287492FF00F959C4 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,92 @@
 		5258EDE228748A4C00F959C4 /* HW15-MVC */ = {
 			isa = PBXGroup;
 			children = (
-				5258EDE328748A4C00F959C4 /* AppDelegate.swift */,
-				5258EDE528748A4C00F959C4 /* SceneDelegate.swift */,
-				5258EDE728748A4C00F959C4 /* ViewController.swift */,
-				5258EDE928748A4C00F959C4 /* Main.storyboard */,
-				5258EDEC28748A4E00F959C4 /* Assets.xcassets */,
-				5258EDEE28748A4E00F959C4 /* LaunchScreen.storyboard */,
+				5258EDF8287490C100F959C4 /* Sources */,
+				5258EDFF2874920800F959C4 /* Resources */,
 				5258EDF128748A4E00F959C4 /* Info.plist */,
 			);
 			path = "HW15-MVC";
+			sourceTree = "<group>";
+		};
+		5258EDF7287490A800F959C4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5258EE002874925800F959C4 /* Constraints.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5258EDF8287490C100F959C4 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5258EDF7287490A800F959C4 /* Extensions */,
+				5258EDF9287490D300F959C4 /* Scenes */,
+				5258EDFE2874912700F959C4 /* App */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5258EDF9287490D300F959C4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5258EDFA287490E300F959C4 /* Model */,
+				5258EDFB287490EE00F959C4 /* View */,
+				5258EDFD2874910700F959C4 /* Controller */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		5258EDFA287490E300F959C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5258EE022874928E00F959C4 /* SettingCellModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5258EDFB287490EE00F959C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5258EE04287492AF00F959C4 /* SettingView.swift */,
+				5258EDFC287490F800F959C4 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5258EDFC287490F800F959C4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5258EE06287492DD00F959C4 /* SwitchTableViewCell.swift */,
+				5258EE08287492FF00F959C4 /* SettingTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5258EDFD2874910700F959C4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5258EDE728748A4C00F959C4 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5258EDFE2874912700F959C4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5258EDE328748A4C00F959C4 /* AppDelegate.swift */,
+				5258EDE528748A4C00F959C4 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5258EDFF2874920800F959C4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5258EDE928748A4C00F959C4 /* Main.storyboard */,
+				5258EDEE28748A4E00F959C4 /* LaunchScreen.storyboard */,
+				5258EDEC28748A4E00F959C4 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +225,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5258EE032874928E00F959C4 /* SettingCellModel.swift in Sources */,
+				5258EE012874925800F959C4 /* Constraints.swift in Sources */,
+				5258EE09287492FF00F959C4 /* SettingTableViewCell.swift in Sources */,
+				5258EE07287492DD00F959C4 /* SwitchTableViewCell.swift in Sources */,
+				5258EE05287492AF00F959C4 /* SettingView.swift in Sources */,
 				5258EDE828748A4C00F959C4 /* ViewController.swift in Sources */,
 				5258EDE428748A4C00F959C4 /* AppDelegate.swift in Sources */,
 				5258EDE628748A4C00F959C4 /* SceneDelegate.swift in Sources */,
