@@ -17,12 +17,6 @@ class SettingView: UIView {
         table.register(SettingTableViewCell.self, forCellReuseIdentifier: SettingTableViewCell.identifier)
         table.register(SwitchTableViewCell.self, forCellReuseIdentifier: SwitchTableViewCell.identifier)
         
-        var userInfoHeader: UserInfoHeader
-        let frame = CGRect(x: 0, y: 88, width: 40, height: 100)
-        userInfoHeader = UserInfoHeader(frame: frame)
-        table.tableHeaderView = userInfoHeader
-        table.tableFooterView = UIView()
-        
         return table
     }()
     
